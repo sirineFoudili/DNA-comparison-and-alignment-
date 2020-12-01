@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <title>Alignement d'adn </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
+
+        <!-- PLOT -->
+        <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.css"
+    rel="stylesheet" type="text/css">
+
+		<!-- CSS  -->
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tooplate.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flaticon.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/price_rangs.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slicknav.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fontawesome-all.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+   </head>
+
+   <body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                	
+                    <img src="static/img/logo/dna3.png" alt="">
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparrent">
+           <div class="headder-top header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-2">
+                            <!-- Logo -->
+                            <div class="logo">
+
+                                <a href="{{ url_for('index') }}"><img src="static/img/logo/dna3.png" alt=""></a>
+                            </div>  
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="menu-wrapper">
+                                <!-- Main-menu -->
+                                <div class="main-menu">
+                                    <nav class="d-none d-lg-block">
+                                        <ul id="navigation">
+                                            <li><a href="{{ url_for('index') }}">Accueil</a></li>
+                                            <li><a href="#">Documenation </a></li>
+                                            <li><a href="#">Aide</a></li>
+                                           
+                                        </ul>
+                                    </nav>
+                                </div>          
+                                
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+                
+           </div>
+       </div>
+        <!-- Header End -->
+    </header>
+    <main>
+
+        
+       {% block content %}{% endblock %}
+								
+								
+    </main>
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area footer-bg footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                       <div class="single-footer-caption mb-50" style="width: 450px;">
+                         <div class="single-footer-caption mb-30">
+                             <div class="footer-tittle">
+                                 <h4> À Propos</h4>
+                                 <div class="footer-pera"><p> Une application web permettant d'aligner les séquences d'ADN en utilisant plusieurs méthodes optimales.
+                                     Le résultat de l'alignement sera ensuite utilisé pour générer un arbre phylogénitique et analyser les liens entre les différentes séquences.</p>
+                                </div>
+                             </div>
+                         </div>
+
+                       </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Contact Info</h4>
+                                <ul>
+                                    <li>
+                                    <p> BP 32 Bab Ezzouar, 16111 - ALGER.</p>
+                                    </li>
+                                    <li><a href="#">Email : contact@usthb.dz</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                             <!-- Form -->
+                             <div class="footer-form" >
+                             
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                     <div class="row d-flex justify-content-between align-items-center">
+                         <div class="col-xl-10 col-lg-10 ">
+                             <div class="footer-copy-right">
+                                 <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | USTHB | Foudili Sirine - Baghbagha Hadjer</a>
+ </p>
+                             </div>
+                         </div>
+                        
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+
+ <!-- JS -->
+    
+       
+
+        <!-- All JS Custom Plugins Link Here here -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+        <!-- Jquery, Popper, Bootstrap -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <!-- Jquery Mobile Menu -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+
+        <!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/price_rangs.js') }}"></script>
+        
+        <!-- One Page, Animated-HeadLin -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/animated.headline.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+
+        <!-- Scrollup, nice-select, sticky -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+        
+        <!-- contact js -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/contact.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.form.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+        
+        <!-- Jquery Plugins, main Jquery -->    
+        <script type="text/javascript" src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+        <!--PLOT-->
+        <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.js"></script>
+        -->
+    </body>
+</html>

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+<script type="text/javascript" src="{{cdn_js | safe}}"></script>
+
+<div class="section-top-border">
+				<h3 class="mb-30">Résultats d'alignement</h3>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-defination" style="width: 600px;">
+							
+							<p class="sample-text">
+				<div class="col-md-4 mt-sm-30">
+						<div class="" style="width: 600px;">
+							<ul class="unordered-list">
+								<li>Fichier :
+								 {{ fichier }} 
+								</li>
+								<li>Méthode d'alignement :
+								{% if methode=='1' %}
+   							  		Needlman & Wunch
+   							  	{% endif %} 
+								{% if methode=='2' %}
+    					 			Comparaison avec K-mers
+    					 		{% endif %} 
+    					 		{% if methode=='3' %}
+    					 			Comparaison avec K-mers et filtres de Bloom
+								{% endif %} 
+							</li>
+								<li>Nombre de séquences : {{taille}} </li>
+								<li>Temps : {{ temps }}  </li>
+
+							</ul>
+						</div>
+					</div>
+
+			</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4" style=" margin-left: 400px;">
+						<div class="single-defination">
+							{% if methode=='1' %}
+							<a  class="btn head-btn2" style="margin-bottom: 30px;color: #0b1c39;" value="details" href="{{ url_for('resultat_details', methode=methode,matrice=matrice,sequences=sequences,noeuds=noeuds) }}">Afficher les détails </a> 
+							<a  class="btn head-btn2" style="margin-bottom: 30px;color: #0b1c39;" value="arbre" href="{{ url_for('resultat_arbre', noeuds=noeuds) }}">Arbre phylogénétique </a> 
+							{% else %}
+							<a  class="btn head-btn2" style="margin-bottom: 30px;color: #0b1c39;" value="details" href="{{ url_for('scoreMatrice', methode=methode,matrice=matrice,sequences=sequences,noeuds=noeuds) }}">Afficher les détails </a> 
+							<a  class="btn head-btn2" style="margin-bottom: 30px;color: #0b1c39;" value="arbre" href="{{ url_for('resultat_arbre', noeuds=noeuds) }}">Arbre phylogénétique </a> 
+							{% endif %} 
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{script | safe}}
+		{{div | safe}}
+
+
+   
+{% endblock %}  

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="section-top-border">
+				<!--
+				<div class="section-top-border text-right" style="padding-top: 0px;padding-bottom: 0px;">
+					<a  class="btn head-btn2" style="margin-bottom: 30px;color: #0b1c39;" value="arbre" href="{{ url_for('resultat_arbre', noeuds=noeuds) }}">Arbre phylogénétique </a>
+				</div>
+			-->
+				<h3 class="mb-30">Matrice de scores</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+
+						<div class="table-row">
+							<div class="serial"></div>
+								{% for seq in sequences %}
+									<div class="serial">{{ seq }}</div>
+								{% endfor %}
+						</div>
+						{% for ligne in range(matrice | length) %}
+						<div class="table-row">
+								{% for val in matrice[ligne] %}
+									<div class="serial">{{ val }}</div>
+								{% endfor %}
+						</div>
+						{% endfor %}
+
+					</div>
+				</div>
+
+			</div>
+{% endblock %} 
