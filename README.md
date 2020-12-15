@@ -1,26 +1,25 @@
-# 
-![Gestion des serveurs](./Documentation/LOGO.png)
+# A & C
+![Alignement & Comparaison d'ADN](./Documentation/LOGO.png)
 ## Introduction 
-Cette application a pour but de gérer les serveurs du département “IT” de la société Sonatrach. Elle vise à fournir une structuration bien organisée, capable de faciliter aux ingénieurs du service "système et sécurité" l’accès à toutes les informations concernant les serveurs et leurs contenus, ainsi que les renseignements et les droits d’accès de leurs utilisateurs.
-#### Watch the video
-[![Présentation de l'application](./Documentation/videp.png)](https://drive.google.com/file/d/1VhAwSOpXZCs7N8OPnml6eKMF9rJDVtme/view?usp=sharing)
+La comparaison de séquences d’ADN est une pratique fondamentale pour de nombreuses applications de biologie et l’une des branches les plus importantes de la bio-informatique, puisque l’analyse et le traitement des données moléculaires s’effectue, " in silico ", au moyen de calculs complexes informatisés. 
+L’application A & C est développée dans le but de comparer les séquences d’ADN en utilisant une méthode de comparaison optimisée basée sur les k-mers et les structures d’index. L’application offre également aux biologistes la possibilité d’appliquer les résultats obtenus au domaine de la phylogénie.
+
+#### vidéo de démonstration
+[![Présentation de l'application](./Documentation/video.png)](https://drive.google.com/file/d/15cHuQAKPvwgSF_W8bW1z_4dr2_3SDuQY/view?usp=sharing)
 ## Technologies
-* PHP
-* SQL
+* Python
+* Flask
 * Bootstrap
 * JavaScript
 * HTML
 * CSS
 ## Features
-* Gestion de l’accès au contenu selon le statut de l’utilisateur
-* Consultation des serveurs
-* Ajout des fichiers partagés
-* Consultation de la liste des partages et du chemin de partage
-* Affichage des serveurs reliés à un serveur d’applications et  consultation des caractéristiques des applications
-* Consultation/ Ajout/ Modification/ Suppression des comptes des utilisateurs
-* Ajout/ Modification/ Suppression des serveurs d’un groupe de partage et de ses membres
-* Ajout/ Modification/ Suppression d’un groupe d’administrateurs d’un serveur
-* Ajout/ Modification/ Suppression des fichiers partagés  
-* Ajout/ Modification/ Suppression des informations sur les applications
+* Alignement des séquences par la méthode de Needlman Wunch
+* Comparaison des séquences par des méthodes sans alignement
+* Génération de l’arbre phylogénétique
+* Lecture des séquences d’ADN (vérification du format et traitement des fichiers Fasta)
+* Amélioration des performances par une recherche de similarité avec indexation
+* Visualisation des bases nucléiques similaires
+* Calcul des taux de similarités entre les paires de séquences
 
 ## Setup
