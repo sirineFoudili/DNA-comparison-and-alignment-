@@ -14,7 +14,7 @@
 * JavaScript
 * HTML
 * CSS
-## Features
+## Fonctionnalités
 * Alignement des séquences par la méthode de Needlman Wunch
 * Comparaison des séquences par des méthodes sans alignement
 * Génération de l’arbre phylogénétique
@@ -38,4 +38,10 @@ conda install -c conda-forge/label/cf202003 biotite
 conda install bokeh
 pip install flask_table
 ```
+```
+git clone https://github.com/sirineFoudili/DNA-comparison-and-alignment-.git
+```
+[Présentation du prjet](https://drive.google.com/file/d/1wsgqZsdEcNtdtA9HEJBTqn2U-O8QK1bF/view?usp=sharing)
+[Vidéo de présentation](https://drive.google.com/file/d/1cd4jTruTzgSD5K6m3uvq5hsDWQwFqF4T/view?usp=sharing)
+
 
