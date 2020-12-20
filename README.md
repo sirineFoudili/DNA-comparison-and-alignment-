@@ -22,11 +22,20 @@
 * Amélioration des performances par une recherche de similarité avec indexation
 * Visualisation des bases nucléiques similaires
 * Calcul des taux de similarités entre les paires de séquences
-## requirments
+## Modules
+* Biotie
+* Bokeh
+* Hashlib
+* Itertools
+* Math
+* Numpy 
+* Os 
+* Werkzeug
+## Installation
 ```
 conda install -c anaconda biopython
 conda install -c conda-forge/label/cf202003 biotite
 conda install bokeh
 pip install flask_table
 ```
-## Setup
+
