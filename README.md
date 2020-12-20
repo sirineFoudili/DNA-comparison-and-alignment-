@@ -41,7 +41,8 @@ pip install flask_table
 ```
 git clone https://github.com/sirineFoudili/DNA-comparison-and-alignment-.git
 ```
-[Présentation du prjet](https://drive.google.com/file/d/1wsgqZsdEcNtdtA9HEJBTqn2U-O8QK1bF/view?usp=sharing)
+[Présentation du projet](https://drive.google.com/file/d/1wsgqZsdEcNtdtA9HEJBTqn2U-O8QK1bF/view?usp=sharing)
+
 [Vidéo de présentation](https://drive.google.com/file/d/1cd4jTruTzgSD5K6m3uvq5hsDWQwFqF4T/view?usp=sharing)
 
 
